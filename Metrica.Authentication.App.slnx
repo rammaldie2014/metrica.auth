@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Metrica.Authentication.Api/Metrica.Authentication.Api.csproj" />
+  <Project Path="Metrica.Authentication.Application/Metrica.Authentication.Application.csproj" />
+  <Project Path="Metrica.Authentication.Domain/Metrica.Authentication.Domain.csproj" />
+  <Project Path="Metrica.Authentication.Infrastructure/Metrica.Authentication.Infrastructure.csproj" />
+</Solution>
