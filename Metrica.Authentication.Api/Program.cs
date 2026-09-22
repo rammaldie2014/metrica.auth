@@ -1,3 +1,4 @@
+using Metrica.Authentication.Api.Extensions;
 using Metrica.Authentication.Application.Commands.Auth.Login;
 using Metrica.Authentication.Application.Interfaces.Repositories;
 using Metrica.Authentication.Application.Interfaces.Security;
@@ -53,6 +54,8 @@ builder.Services.AddScoped<LoginCommandHandler>();
 builder.Services.AddScoped<AuthenticationDataSeeder>();
 
 var app = builder.Build();
+
+await app.ApplyDatabaseMigrationsAsync();
 
 if (app.Environment.IsDevelopment())
 {
